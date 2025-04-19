@@ -18,9 +18,9 @@ function enableSound() {
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBio-5qg1S9YFIiyw82nRINNI4BjXkjzio",
+  apiKey: "your-api-key",
   authDomain: "new-one-b506a.firebaseapp.com",
-  databaseURL: "https://new-one-b506a-default-rtdb.firebaseio.com",
+  databaseURL: "your-database-url",
   projectId: "new-one-b506a",
   storageBucket: "new-one-b506a.appspot.com",
   messagingSenderId: "709621655682",
@@ -411,10 +411,10 @@ soldierRef.child("sensorData/sosTriggered").on("value", snapshot => {
             time: sosPayload.time
           });
         } else {
-          console.warn("❌ No medico found!");
+          console.warn(" No medico found!");
         }
 
-        alert(`🚨 SOS Alert Sent to Nearest Medico!\nDoctor: ${nearestMedico?.name}\nLocation: Latitude ${lat}, Longitude ${lon}\nHeart Rate: ${heartvalue} bpm\nGas Level: ${gasvalue} ppm\nTemperature: ${tempvalue} °C`);
+        alert(` SOS Alert Sent to Nearest Medico!\nDoctor: ${nearestMedico?.name}\nLocation: Latitude ${lat}, Longitude ${lon}\nHeart Rate: ${heartvalue} bpm\nGas Level: ${gasvalue} ppm\nTemperature: ${tempvalue} °C`);
 
         soldierRef.child("sensorData").update({ sosTriggered: false });
       });
