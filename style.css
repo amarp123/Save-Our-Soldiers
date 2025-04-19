@@ -1,0 +1,174 @@
+/* General Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0b132b;
+  color: #eaeaea;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #1c2541;
+  color: #f0f0f0;
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 4px solid #3a506b;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h4, h5 {
+  color: #ffcb77;
+  font-weight: bold;
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 400px;
+}
+
+/* Alert Banner */
+#alertBanner {
+  display: none;
+  background: linear-gradient(90deg, #ff0033 0%, #cc0000 100%);
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #ffa500;
+  z-index: 9999;
+}
+
+/* Cards */
+.card {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background-color: #1c2541;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  min-height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #ffcc70; /* gold-ish for better visibility */
+  border-bottom: 1px solid #3a506b;
+  padding-bottom: 0.5rem;
+}
+
+.card p, .card span, .card li, .form-label {
+  font-size: 1rem;
+  color: #eaeaea;
+}
+
+/* Map */
+#map {
+  height: 350px !important;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons */
+.btn-custom {
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #ff595e;
+  border: none;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #ff3c42;
+  color: white;
+  transform: scale(1.03);
+}
+
+.btn-outline-info {
+  color: #00b4d8;
+  border-color: #00b4d8;
+}
+
+.btn-outline-info:hover {
+  background-color: #00b4d8;
+  color: #fff;
+}
+
+/* Table & Health Log */
+.health-log-section {
+  margin-top: 2rem;
+}
+
+.table {
+  color: #ffffff;
+  background-color: #1c2541;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table th {
+  background: #3a506b;
+  color: white;
+  padding: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table td {
+  color: #ffffff;
+  background-color: #1c2541;
+  text-align: center;
+  padding: 0.6rem;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #23395d;
+}
+
+.table tbody tr:hover {
+  background-color: #2e4a75;
+}
+
+.table-responsive {
+  max-height: 400px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* Dropdowns and Labels */
+select.form-select {
+  background-color: #3a506b;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem;
+}
+
+select.form-select:focus {
+  border: 2px solid #5bc0be;
+  box-shadow: none;
+}
+
+.form-label {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Small Adjustments */
+#heartRate, #gas, #temp, #motionStatus {
+  font-weight: bold;
+  color: #00ffcc;
+}
